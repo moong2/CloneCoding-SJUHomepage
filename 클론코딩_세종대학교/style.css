@@ -1,0 +1,44 @@
+body{
+    margin : 0px;
+}
+header{
+    position : relative;
+    display : flex;
+    height : 35px;
+    background-color : #666666;
+    justify-content: space-between;
+}
+header .informationList{
+    margin : 0px;
+    position : absolute;
+    top : 25%;
+    padding-left : 280px;
+    display : flex;
+    list-style : none;
+    font-weight : bold;
+    font-size : 12px;
+    color: #d0d3d5;
+}
+header .informationList li{
+    padding-left : 10px;
+    padding-right : 10px;
+    border-right : 1px solid lightgray
+}
+header .search{
+    margin-top : 5px;
+    padding-right : 300px;
+}
+header .search input{
+    background-color : #394856;
+    border-radius : 10px;
+    width : 200px;
+    height : 25px;
+    border : 0px;
+    padding : 0px;
+    padding-left : 15px;
+    padding-right : 15px;
+}
+header .search input::placeholder{
+    font-size : 12px;
+    color : #8996a0;
+}
