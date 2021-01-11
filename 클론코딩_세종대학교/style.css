@@ -5,14 +5,14 @@ header{
     position : relative;
     display : flex;
     height : 35px;
-    background-color : #666666;
+    background-color : #4B5965;
     justify-content: space-between;
 }
 header .informationList{
     margin : 0px;
     position : absolute;
     top : 25%;
-    padding-left : 280px;
+    padding-left : 340px;
     display : flex;
     list-style : none;
     font-weight : bold;
@@ -20,13 +20,22 @@ header .informationList{
     color: #d0d3d5;
 }
 header .informationList li{
-    padding-left : 10px;
-    padding-right : 10px;
-    border-right : 1px solid lightgray
+    padding-left : 12px;
+    padding-right : 12px;
+}
+header .informationList #before::before{
+    background : #5a6a76;
+    width : 2px;
+    height : 7px;
+    margin-left : -12px;
+    margin-top : 5px;
+    position : absolute;
+    content : '';
+    display : inline-block;
 }
 header .search{
     margin-top : 5px;
-    padding-right : 300px;
+    padding-right : 360px;
 }
 header .search input{
     background-color : #394856;
@@ -41,4 +50,82 @@ header .search input{
 header .search input::placeholder{
     font-size : 12px;
     color : #8996a0;
+}
+
+body .category{
+    height : 99px;
+    display : flex;
+    justify-content : space-between;
+}
+body .category img{
+    object-fit : none;
+}
+body .category #logo{
+    margin-left : 350px;
+}
+body .category .element{
+    display : flex;
+    margin-right : 360px;
+}
+body .category .element .detail{
+    top : 25%;
+    display : flex;
+    list-style : none;
+    font-size : 17px;
+    color : #555555;
+    letter-spacing : -0.075em;
+}
+body .category .element .detail li{
+    margin-top : 20px;
+    padding-right : 50px;
+}
+
+body .news .pictureInformation{
+    position : relative;
+}
+body .news .pictureInformation #changeImage{
+    position : absolute;
+    left : 1050px;
+    top : 297px;
+}
+body .news .pictureInformation .information{
+    position : absolute;
+    left : 1020px;
+    top : 297px;
+    list-style : none;
+    color : #ffffff;
+    margin-left : 20px;
+    margin-top : 40px;
+}
+body .news .pictureInformation .information .text0{
+    font-size : 18px;
+    letter-spacing : -0.12em;
+}
+body .news .pictureInformation .information .text1{
+    font-size : 28px;
+    letter-spacing : -0.12em;
+    margin-top : 2px;
+}
+body .news .pictureInformation .information .text1::after{
+    background : white;
+    width : 30px;
+    height : 2px;
+    position : absolute;
+    top : 70px;
+    left : 40px;
+    content : '';
+    display : inline-block;
+}
+body .news .pictureInformation .information .text2{
+    padding-top : 19px;
+}
+body .news .pictureInformation .information .text2 ul{
+    font-size : 14px;
+    list-style : none;
+    padding-inline-start: 0px;
+    letter-spacing: -0.095em;
+    opacity : 0.7;
+}
+body .news .pictureInformation .information .text2 li{
+    margin-bottom : 4px;
 }
