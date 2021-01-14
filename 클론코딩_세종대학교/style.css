@@ -271,3 +271,135 @@ body .news .category .text2{
     -webkit-box-orient : vertical;
     overflow : hidden;
 }
+
+body .banner{
+    position : relative;
+    height : 515px;
+}
+body .banner li{   
+    list-style : none;
+}
+body .banner a{
+    text-decoration: none;
+    color : black;
+}
+body .banner .bannerBundle{
+    position : absolute;
+    width : 1200px;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+body .banner .bannerBundle .bannerLeft{
+    position : relative;
+    display : flex;
+    flex-direction: column;
+}
+body .banner .bannerBundle .bannerLeft .notice{
+    position : relative;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width : 466px;
+    height : 196px;
+}
+body .banner .bannerBundle .bannerLeft .notice .category{
+    position : relative;
+    height : 39px;
+    border-bottom : 1px solid #d2d2d2;
+}
+body .banner .bannerBundle .bannerLeft .notice .category ul{
+    position : absolute;
+    height : 100%;
+    display : flex;
+    padding : 0px;
+    margin : 0px;
+}
+body .banner .bannerBundle .bannerLeft .notice .category button{
+    padding : 0px;
+    height : 100%;
+    border : none;
+    outline : none;
+    background :inherit;
+    color : #333333;
+    font-weight : bold;
+    font-size : 16px;
+}
+body .banner .bannerBundle .bannerLeft .notice .category ul #before{
+    padding-left : 20px;
+}
+body .banner .bannerBundle .bannerLeft .notice .category ul #before::before{
+    background : #d2d2d2;
+    width : 1px;
+    height : 7px;
+    margin-left : -9px;
+    margin-top : 16px;
+    position : absolute;
+    content : '';
+    display : inline-block;
+}
+body .banner .bannerBundle .bannerLeft .notice .category ul #more{
+    transform : translate(300%, 10%);
+}
+body .banner .bannerBundle .bannerLeft .notice .category ul #onclick{
+    color : #C3002F;
+    border-bottom : 2px solid #C3002F;
+}
+body .banner .bannerBundle .bannerLeft .notice .contents{
+    transform : translate(0, -10%);
+    height : 129px;
+}
+body .banner .bannerBundle .bannerLeft .notice .contents ul{
+    padding : 0px;
+    margin : 0px;
+}
+body .banner .bannerBundle .bannerLeft .notice .contents li{
+    display : flex;
+    margin-bottom : 5px;
+    justify-content: space-between;
+}
+body .banner .bannerBundle .bannerLeft .notice .contents a{
+    font-size : 15px;
+    color : #666666;
+    letter-spacing: -0.05em;
+}
+body .banner .bannerBundle .bannerLeft .notice .contents a:hover{
+    text-decoration: underline;
+}
+body .banner .bannerBundle .bannerLeft .notice .contents span{
+    color : #c5c5c5;
+    font-size : 10px;
+    font-weight : bold;
+}
+body .banner .bannerBundle .bannerLeft .leftBottomBundle{
+    display : flex;
+}
+body .banner .bannerBundle .bannerLeft .leftBottomBundle .title{
+    font-size : 16px;
+    font-weight : bold;
+    letter-spacing : -0.1em;
+    margin-bottom : 7px;
+    color : #343434;
+}
+body .banner .bannerBundle .bannerLeft .leftBottomBundle .bannerZone img{
+    border : 1px solid #e2e3e7;
+    margin-right : 10px;
+}
+body .banner .bannerBundle .bannerLeft .leftBottomBundle .major .majorList{
+    height : 177px;
+    width : 110px;
+    overflow-y : scroll;
+    margin : 0px;
+    padding : 0px;
+    border : 1px solid #e2e3e7;
+    font-size : 14px;
+    letter-spacing: -0.1em;
+    padding-left : 12px;
+}
+body .banner .bannerBundle .bannerLeft .leftBottomBundle .major .majorList a{
+    color : #666666;
+}
+body .banner .bannerBundle .bannerLeft .leftBottomBundle .major .majorList li{
+    padding-top : 6px;
+    padding-bottom : 6px;
+}
