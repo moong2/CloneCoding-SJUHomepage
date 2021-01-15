@@ -285,14 +285,18 @@ body .banner a{
 }
 body .banner .bannerBundle{
     position : absolute;
+    display : flex;
+    justify-content: space-between;
     width : 1200px;
-    top : 50%;
+    top : 55%;
     left : 50%;
-    transform : translate(-50%, -50%);
+    transform : translate(-50%, -55%);
 }
 body .banner .bannerBundle .bannerLeft{
     position : relative;
     display : flex;
+    width : 473px;
+    margin : 0px;
     flex-direction: column;
 }
 body .banner .bannerBundle .bannerLeft .notice{
@@ -342,7 +346,7 @@ body .banner .bannerBundle .bannerLeft .notice .category ul #more{
     transform : translate(300%, 10%);
 }
 body .banner .bannerBundle .bannerLeft .notice .category ul #onclick{
-    color : #C3002F;
+    color : #C3002F;    
     border-bottom : 2px solid #C3002F;
 }
 body .banner .bannerBundle .bannerLeft .notice .contents{
@@ -402,4 +406,123 @@ body .banner .bannerBundle .bannerLeft .leftBottomBundle .major .majorList a{
 body .banner .bannerBundle .bannerLeft .leftBottomBundle .major .majorList li{
     padding-top : 6px;
     padding-bottom : 6px;
+}
+
+body .banner .bannerBundle .bannerMid{
+    position : absolute;
+    background-image: url("img5.png");
+    width : 252px;
+    height : 502px;
+    left : 50%;
+    transform : translate(-48%, -19%);
+}
+body .banner .bannerBundle .bannerMid .title{
+    position : relative;
+    width : 100%;
+    text-align : center;
+    font-size : 16px;
+    font-weight : bold;
+    letter-spacing: -0.1em;
+    color : white;
+    padding-top : 20px;
+    padding-bottom : 30px;
+}
+body .banner .bannerBundle .bannerMid .title #text0{
+    color : #FFEA9A;
+}
+body .banner .bannerBundle .bannerMid .iconBundle .iconList li{
+    text-align : center;
+    width : 72px;
+    padding-bottom : 20px;
+}
+body .banner .bannerBundle .bannerMid .iconBundle .iconList .text0{
+    font-size : 12px;
+    letter-spacing : -0.1em;
+    color : white;
+    line-height : 18px;
+}
+body .banner .bannerBundle .bannerMid .iconBundle{
+    position : absolute;
+    display : block;
+    width : 100%;
+    height : 431px;
+}
+body .banner .bannerBundle .bannerMid .iconBundle .iconList{
+    position : absolute;
+    margin : 0px;
+    padding : 0px 18px;
+    width : 217px;
+    height : 100%;
+    display : flex;
+    flex-wrap : wrap;
+}
+body .banner .bannerBundle .bannerRight{
+    position : absolute;
+    display : flex;
+    flex-direction: column;
+    left : 61%;
+    height : 405.6px;
+    padding-left : 11px;
+    justify-content: space-between;
+}
+body .banner .bannerBundle .bannerRight .promotion{
+    position : relative;
+    width : 454px;
+    height : 195px;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox{
+    position : relative;
+    display : flex;
+    width : 100%;
+    height : 100%;
+    border : 1px solid #e2e3e7; 
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .leftBox{
+    position : relative;
+    width : 93px;
+    display : flex;
+    flex-direction: column;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .leftBox ul{
+    padding : 0px;
+    margin : 0px;
+    position : absolute;
+    width : 100%;
+    height : 100%;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .leftBox ul li{
+    height : 65px;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .leftBox ul li+li{
+    border-top : 1px solid #e2e3e7;
+    border-right : 1px solid #e2e3e7;
+    background-color : #f5f5f5;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .leftBox Button{
+    display : flex; 
+    width : 100%;
+    height : 100%;
+    padding : 0px;
+    border : none;
+    outline : none;
+    background :inherit;
+    text-align : center;
+    cursor : pointer;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .leftBox Button img{
+    padding-left : 30px;
+    padding-top : 15px;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .rightBox{
+    padding-left : 17px;
+    text-align :center;
+}
+body .banner .bannerBundle .bannerRight .promotion .promotionBox .rightBox img{
+    padding-top : 10px;
+}
+body .banner .bannerBundle .bannerRight .promotion .performance{
+    position : relative;
+}
+body .banner .bannerBundle .bannerRight .promotion .performance area{
+    cursor : pointer;
 }
