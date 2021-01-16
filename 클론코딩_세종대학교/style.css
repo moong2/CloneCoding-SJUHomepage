@@ -526,3 +526,124 @@ body .banner .bannerBundle .bannerRight .promotion .performance{
 body .banner .bannerBundle .bannerRight .promotion .performance area{
     cursor : pointer;
 }
+
+footer{
+    position : relative;
+    height : 160px;
+    width : 100%;
+    color : #666666;
+    background : #1B1B1B;
+}
+footer li{
+    list-style : none;
+}
+footer a{
+    text-decoration: none;
+    color : #999999;
+    font-size : 12px;
+    font-weight : bold;
+    letter-spacing: -0.1em;
+    line-height : 60px;
+}
+footer a:hover{
+    color : white;
+}
+footer .inside{
+    position : absolute;
+    width : 1200px;
+    height : 100%;
+    left : 50%;
+    transform : translate(-50%, 0);
+    display : flex;
+    flex-direction: column;
+}
+footer .inside .upSide{
+    height : 60px;
+    width : 100%;
+    border-bottom : 1px solid #262626;
+}
+footer .inside .downSide{
+    position : relative;
+    width : 100%;
+    height : 100px;
+}
+footer .inside .upSide .category{
+    display: flex;
+    margin : 0px;
+    padding : 0px;
+    width : 100%;
+    height : 100%;
+}
+footer .inside .upSide .category li+li{
+    padding-left : 17px;
+}
+footer .inside .upSide .category #first a{
+    font-size : 14px;
+    color : white;
+}
+footer .inside .upSide .category li:not(#first)::before{
+    width : 2px;
+    height : 8px;
+    margin-right : 10px;
+    content : '';
+    display : inline-block;
+    background : #313131;
+}
+footer .inside .downSide .contactMethod{
+    position : absolute;
+    height : 100%;
+    width : 100%;
+}
+footer .inside .downSide .contactMethod .text{
+    padding-top : 35px;
+}
+footer .inside .contactMethod .inside01 .category{
+    padding : 0px;
+    margin : 0px;
+    font-size : 12px;
+    height : 16px;
+}
+footer .inside .contactMethod .inside01 .category #location{
+    letter-spacing: -0.075em;
+}
+footer .inside .contactMethod .inside01 .category #text0{
+    color : #C3002F;
+}
+footer .inside .contactMethod .inside01 .category li+li{
+    padding-left : 20px;
+}
+footer .inside .contactMethod .inside02{
+    font-weight : bold;
+    font-size : 10px;
+    color : #333333;
+    letter-spacing: 0.025em;
+}
+footer .inside .relatedSites{
+    position : absolute;
+    display : flex;
+    left : 100%;
+    transform : translate(-100%, 0);
+    margin-top : 30px;
+}
+footer .inside .relatedSites #sites{
+    font-weight : bold;
+    font-size : 12px;
+    letter-spacing: -0.1em;
+    color : #555555;
+    width : 200px;
+    height : 40px;
+    border : none;
+    outline : none;
+    padding-left : 5px;
+}
+footer .inside button{
+    background : #a1023c;
+    border : none;
+    outline : none;
+    color : white;
+    font-weight : bold;
+    font-size : 12px;
+    width : 64px;
+    height : 40px;
+    margin-left : 5px;
+}
