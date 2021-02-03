@@ -38,11 +38,11 @@ function onButtonClick(event, items){
     const dataset = target.dataset;
     const key = dataset.key;
     const value = dataset.value;
-    const el = document.querySelector('#select');
+    const el = document.querySelector('#selectBoard');
 
     if(key == null || value == null){return;}
     el.id = "";
-    target.id = "select";
+    target.id = "selectBoard";
     displayItems(value, items.filter(item=>item[key] === value))
 }
 
