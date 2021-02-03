@@ -4,6 +4,7 @@
         <meta charset = "utf-8">
         <title>세종대학교</title>
         <link rel = "stylesheet" href = "style.css">
+        <script src="https://kit.fontawesome.com/92502e3298.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -42,6 +43,17 @@
             <div class = "pictureInformation">
                 <img id = "backgroundImage" src = "img/img4.jpg">
                 <div class = "explanation">
+                    <div class = "pictureOrder">
+                        <ul class = "pictureOrder__slide">
+                            <li><button type = "button" onclick = "pressEachButton(this, 4);" class = "slide" name = "select4" id = "select"></button></li>
+                            <li><button type = "button" onclick = "pressEachButton(this, 1);" class = "slide" name = "select1"></button></li>
+                            <li><button type = "button" onclick = "pressEachButton(this, 2);" class = "slide" name = "select2"></button></li>
+                            <li><button type = "button" onclick = "pressEachButton(this, 3);" class = "slide" name = "select3"></button></li>
+                            <li><button type = "button" onclick = "pressEachButton(this, 5);" class = "slide" name = "select5"></button></li>
+                            <li><button type = "button" onclick = "toggleAll(this);" class = "slideStart"><i class="fas fa-caret-right"></i></button></li>
+                            <li><button type = "button" onclick = "toggleAll(this);" class = "slidePause"><i class="fas fa-pause"></i></button></li>
+                        </ul>
+                    </div>
                     <ul class = "information">
                         <div class = "text0">교양/전공 교육혁신을 통한</div>
                         <div class = "text1">창조적 인재 양성!</div>
@@ -426,5 +438,6 @@
             </div>
         </footer>
         <script type = "text/javascript" src = "src/main.js"></script>
+        <script type = "text/javascript" src = "src/toggleImg.js"></script>
     </body>
 </html>
