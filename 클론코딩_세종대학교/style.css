@@ -101,6 +101,7 @@ body .category .element .detail{
     display : flex;
     list-style : none;
     font-size : 17px;
+    white-space : nowrap;
     color : #555555;
     letter-spacing : -0.075em;
 }
@@ -123,7 +124,7 @@ body .sejongIntroduce .pictureInformation #backgroundImage{
 }
 body .sejongIntroduce .pictureInformation .explanation{
     position : absolute;
-    background-image: url("img0.png");
+    background-image: url("img/img0.png");
     width : 510px;
     height : 235px;
     margin-left : 55vw;
@@ -183,10 +184,10 @@ body .sejongIntroduce .pictureInformation .menu{
     background-color : rgba(51, 51, 51, 0.8);
     list-style : none;
 }   
-body .sejongIntroduce .pictureInformation .menu #select{
+body .sejongIntroduce .pictureInformation .menu {
     display : flex;
 }
-body .sejongIntroduce .pictureInformation .menu #select img{
+body .sejongIntroduce .pictureInformation .menu .sejongNews img{
     position : absolute;
     left : 100%;
     object-fit : none;
@@ -194,7 +195,7 @@ body .sejongIntroduce .pictureInformation .menu #select img{
     vertical-align: middle;
     transform : translate(-80%, 0);
 }
-body .sejongIntroduce .pictureInformation .menu #select button{
+body .sejongIntroduce .pictureInformation .menu .sejongNews button{
     background-color : white;
     color : black;
 }
@@ -218,6 +219,7 @@ body .news{
 body .news .category{
     position : absolute;
     display : flex;
+    align-items : center;
     list-style : none;
     width : 1200px;
     height : 320px;
@@ -410,7 +412,7 @@ body .banner .bannerBundle .bannerLeft .leftBottomBundle .major .majorList li{
 
 body .banner .bannerBundle .bannerMid{
     position : absolute;
-    background-image: url("img5.png");
+    background-image: url("img/img5.png");
     width : 252px;
     height : 502px;
     left : 50%;
