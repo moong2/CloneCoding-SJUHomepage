@@ -34,12 +34,15 @@ function createHTMLString(value, item){
 }
 
 function onButtonClick(event, items){
-    const dataset = event.target.dataset;
+    const target = event.target;
+    const dataset = target.dataset;
     const key = dataset.key;
     const value = dataset.value;
-    const el = doccument.getElementbyId("")
+    const el = document.querySelector('#select');
 
     if(key == null || value == null){return;}
+    el.id = "";
+    target.id = "select";
     displayItems(value, items.filter(item=>item[key] === value))
 }
 
@@ -50,6 +53,7 @@ function setEventListeners(items){
 
 loadItems()
 .then(items=>{
+    displayItems("세종뉴스", items.filter(item=>item["type"] === "세종뉴스"));
     setEventListeners(items);
 })
 .catch(console.log);

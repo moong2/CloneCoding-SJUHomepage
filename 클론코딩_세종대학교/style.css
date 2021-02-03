@@ -195,20 +195,20 @@ body .sejongIntroduce .pictureInformation .menu .sejongNews img{
     vertical-align: middle;
     transform : translate(-80%, 0);
 }
-body .sejongIntroduce .pictureInformation .menu .sejongNews button{
-    background-color : white;
-    color : black;
-}
 body .sejongIntroduce .pictureInformation .menu button{
     padding : 0px;
     width : 200px;
     height : 100%;
     border : none;
     outline : none;
-    background :inherit;
+    background : inherit;
     font-size : 16px;
     letter-spacing: -0.075em;
     color : white;
+}
+body .sejongIntroduce .pictureInformation .menu #select{
+    background-color : white;
+    color : black;
 }
 
 body .news{
