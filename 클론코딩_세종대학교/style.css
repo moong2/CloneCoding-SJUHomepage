@@ -90,8 +90,10 @@ body .category .inside{
 body .category img{
     object-fit : none;
 }
-body .category #logo{
+body .category .image{
     position : relative;
+    display : flex;
+    align-items: center;
 }
 body .category .element{
     position : relative;
